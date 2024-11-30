@@ -10,7 +10,7 @@ export default function App() {
 
   const consumirAPI = async () => {
 
-    const response = await axios.get(`htpps://viacep.com.br/ws/${cep}/json/`);
+    const response = await axios.get(`https://viacep.com.br/ws/${cep}/json`);
 
     setData(response.data)
   }
